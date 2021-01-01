@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@500&display=swap" rel="stylesheet">
+    <title>Hamza's Portfolio</title>
+</head>
+
+<body>
+    <header>
+        <div class="jumbotron jumbotron-fluid ">
+            <div class="container">
+                <div class="row">
+                    <div class="signin-button mr-2 mt-2">
+                        <button class="btn text-white btn-signin"><strong>Sign-in</strong></button>
+                        <button class="btn btn-signup"><strong>Sign-up</strong></button>
+                    </div>
+                </div>
+                <div class="row justify-content-center add-margin-top">
+                    <a href="index.html" class="col-2 col-md-1"><i class="fa-custom fa fa-4x fa-shopping-cart"></i></a>
+                    <h1 class="col-md-4 col-8">Food Run</h1>
+                </div>
+                
+            </div>
+            <div class="container container-fluid ">           
+                <form class="row justify-content-center mt-5">
+                    <input class="col-8 form-control no-border-right" type="text" id="searchInput" style="height: 50px;" placeholder="Look up products for" style="padding: 2px;">           
+                    <button  class="col-2 col-md-1 form-control no-border-left" type="submit" style="height: 50px;"><i class="fa fa-search"></i></button>                  
+                </form>
+                <nav class="navbar navbar-expand-sm navbar-dark sticky-top add-margin-top">
+                        
+                    <button class="navbar-toggler" style="border-color: white; margin-left: -15px;" type="button" data-toggle="collapse" data-target="#nucampNavbar">
+                        <span class="custom-navbar-toggler-icon"></span>
+                    </button>           
+                    <div class="collapse navbar-collapse" id="nucampNavbar">
+                        <ul class="navbar-nav border-radius-item p-2">
+                            <li class="nav-item active mr-md-5"><a class="nav-link text-white" href="#"><strong>Home</strong></a></li>
+                            <li class="nav-item mr-md-5"><a class="nav-link text-white " href="aboutus.html"><strong>Cart</strong></a></li>
+                            <li class="nav-item mr-md-5"><a class="nav-link text-white" href="#"><strong>Repository</strong></a></li>
+                            <li class="nav-item mr-md-5"><a class="nav-link text-white" href="contactus.html"><strong>Portfolio</strong></a></li>
+                            <li class="nav-item"><a class="nav-link text-white" href="contactus.html"><strong>Contact</strong></a></li>
+                        </ul>
+                    </div>
+                </nav>     
+            </div>  
+        </div>
+    </header>
+
+    <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nucampNavbar">
+        <span class="navbar-toggler-icon"></span>
+    </button>    -->
+    <!-- <nav class="navbar navbar-expand-sm navbar-light sticky-top">
+        <div class="container">
+            
+            <a href="#" class="offset-7 mr-2 d-block d-md-none d-lg-block`"><i class="fa fa-user-circle fa-lg" style="color: aliceblue;"></i></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nucampNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse text-white" id="nucampNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item active"><a class="nav-link text-white" href="#"><i class="fa fa-home fa-lg"></i>Home</a></li>
+                    <li class="nav-item "><a class="nav-link text-white" href="aboutus.html"><i class="fa fa-info fa-lg"></i> About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#"><i class=" fa fa-list fa-lg"></i> Sites</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contactus.html"><i class="fa fa-address-card fa-lg"></i> Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav> -->
+
+
+
+    <!-- <div class="container container-fluid mt-3">
+        <form>
+            <div class="row form-group row-content">
+                <label for="searchInput" class="col-md-3 align-text-top"><h4>Ingredients for:</h4></label>
+                <input type="text" class="form-control col-md-6 col-11 no-border-right" id="searchInput" placeholder="Minestrone" style="padding: 2px;">
+                <button type="submit" class="form-control col-md-1 col-1 no-border-left"><i class="fa fa-search"></i></button>
+            </div>
+        </form>
+    </div> -->
+
+    <main>
+
+        <div class="container mt-5">
+            <div class="row ml-1">
+                <div class="col">
+                    <h3 class="h3">Most popular:</h3>
+                    <hr>
+                </div>
+            </div>
+            <div class="row" id="popular-dishes-container">
+                <!-- <div class="col-6 col-md-4 col-lg-3">
+                    <div class="card mb-3">
+                        <a href=""><img src="pic-1.jpg" alt="" class="card-img-top"></a>
+                        <div class="card-body">
+                            <h5 class="card-title">Products<span class="card-text offset-4">1.99$</span></h5>
+                            <p class="card-text">Hello dfsadfsafdsafsadfsfasfasfas<span class="offset-1 card-text"></span></p>
+                        </div>
+                        <button class="btn btn-warning">Add to cart</button>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </main>
+    <button role="button" class="btn btn-info" data-toggle="modal" data-target="#modalExample"></button>
+    <div class="modal fade" id="modalExample" role="dialog">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header bg-info text-white">
+                    <h3 class="modal-title">Products</h3>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <ul>
+                        <li>asba</li>
+                        <li>asba</li>
+                        <li>asba</li>
+                        <li>asba</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+
+    </footer>
+
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>

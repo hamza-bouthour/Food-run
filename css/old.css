@@ -1,0 +1,24 @@
+
+.add-overflow {
+  background-color: white; }
+
+.row-content {
+  padding: 10px; }
+
+.no-border-left {
+  border-radius: 0; }
+
+.no-border-right {
+  border-right: none;
+  border-radius: 0; }
+
+.no-margin {
+  margin: 0; }
+
+.card-width {
+  width: 10rem;
+  height: 10rem; }
+
+.add-overflow {
+  overflow-y: auto;
+  flex-wrap: nowrap; }
