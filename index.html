@@ -20,12 +20,12 @@
 
 <body>
     <header>
-        <div class="jumbotron jumbotron-fluid ">
+        <div class="jumbotron jumbotron-fluid">
             <div class="container">
                 <div class="row">
                     <div class="signin-button mr-2 mt-2">
-                        <button class="btn text-white btn-signin"><strong>Sign-in</strong></button>
-                        <button class="btn btn-signup"><strong>Sign-up</strong></button>
+                        <button class="btn text-white btn-signin" data-target="#signinModal" data-toggle="modal"><strong>Sign-in</strong></button>
+                        <button class="btn btn-signup" data-target="#signupModal" data-toggle="modal"><strong>Sign-up</strong></button>
                     </div>
                 </div>
                 <div class="row justify-content-center add-margin-top">
@@ -39,25 +39,112 @@
                     <input class="col-8 form-control no-border-right" type="text" id="searchInput" style="height: 50px;" placeholder="Look up products for" style="padding: 2px;">           
                     <button  class="col-2 col-md-1 form-control no-border-left" type="submit" style="height: 50px;"><i class="fa fa-search"></i></button>                  
                 </form>
-                <nav class="navbar navbar-expand-sm navbar-dark sticky-top add-margin-top">
+                <nav class="navbar navbar-expand-sm navbar-dark navbar-dark sticky-top add-margin-top">
                         
                     <button class="navbar-toggler" style="border-color: white; margin-left: -15px;" type="button" data-toggle="collapse" data-target="#nucampNavbar">
                         <span class="custom-navbar-toggler-icon"></span>
                     </button>           
                     <div class="collapse navbar-collapse" id="nucampNavbar">
                         <ul class="navbar-nav border-radius-item p-2">
-                            <li class="nav-item active mr-md-5"><a class="nav-link text-white" href="#"><strong>Home</strong></a></li>
-                            <li class="nav-item mr-md-5"><a class="nav-link text-white " href="aboutus.html"><strong>Cart</strong></a></li>
-                            <li class="nav-item mr-md-5"><a class="nav-link text-white" href="#"><strong>Repository</strong></a></li>
-                            <li class="nav-item mr-md-5"><a class="nav-link text-white" href="contactus.html"><strong>Portfolio</strong></a></li>
-                            <li class="nav-item"><a class="nav-link text-white" href="contactus.html"><strong>Contact</strong></a></li>
+                            <li class="nav-item active mr-md-5"><a class="nav-link text-white" href="#">Home</a></li>
+                            <li class="nav-item mr-md-5"><a class="nav-link text-white " href="">Cart</a></li>
+                            <li class="nav-item mr-md-5"><a class="nav-link text-white" href="#">Repository</a></li>
+                            <li class="nav-item mr-md-5"><a class="nav-link text-white" href="">Portfolio</a></li>
+                            <li class="nav-item"><a class="nav-link text-white" href="">Contact</a></li>
                         </ul>
                     </div>
                 </nav>     
             </div>  
         </div>
     </header>
+    <div id="signinModal" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header mx-auto">
+                    <h5>Log In</h5>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <form>
+                            <div class="form-group">
+                                <label for="emailSigninInput">Email address</label>
+                                <input type="email" class="form-control" id="emailSigninInput" placeholder="name@example.com">
+    
+                            </div>
+                            <div class="form-group">
+                                <label for="passwordSigninInput" >Password</label>
+                                <input type="password" class="form-control" id="passwordSigninInput">
 
+                            </div>
+                            <div class="form-group p-2">                              
+                                <div>
+                                    <input class="form-check-input" type="checkbox" value="1" id="defaultCheck1">
+                                    <label class="form-check-label" for="defaultCheck1">
+                                    Default checkbox
+                                    </label>
+                                </div>
+                                <div class="form-group mt-2">
+                                    <button class="btn btn-danger" data-dismiss="modal">Cancel</button>
+                                    <button class="btn btn-success">Log In</button>
+                                </div>
+                            </div>                               
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="signupModal" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header mx-auto">
+                    <h5>Create an account</h5>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <form>
+                            <div class="form-group">
+                                <label for="emailSignupInput">Email address</label>
+                                <input type="email" class="form-control" id="emailSignupInput" placeholder="name@example.com">
+    
+                            </div>
+                            <div class="form-group">
+                                <label for="firstNameInput" >First name</label>
+                                <input type="text" class="form-control" id="firstNameInput">
+
+                            </div>
+                            <div class="form-group">
+                                <label for="lastNameInput" >Last name</label>
+                                <input type="text" class="form-control" id="lastNameInput">
+
+                            </div> 
+                            <div class="form-group">
+                                <label for="signupPassowrd" >Password</label>
+                                <input type="password" class="form-control" id="signupPassowrd">
+                            </div>                             
+                            <div class="form-group">
+                                <label for="signupPassowrd2" >Password</label>
+                                <input type="password" class="form-control" id="signupPassowrd2">
+                            </div>   
+                            <div class="form-group">
+                                <button class="btn btn-danger" data-dismiss="modal">Cancel</button>
+                                <button class="btn btn-success">Confirm</button>
+                            </div>                          
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- <div id="signinModal" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-body">                   
+                </div>
+            </div>
+        </div>
+    </div> -->
     <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nucampNavbar">
         <span class="navbar-toggler-icon"></span>
     </button>    -->
@@ -113,7 +200,9 @@
                     </div>
                 </div> -->
             </div>
+
         </div>
+        <div id="modalsContainer"></div>
     </main>
     <button role="button" class="btn btn-info" data-toggle="modal" data-target="#modalExample"></button>
     <div class="modal fade" id="modalExample" role="dialog">
