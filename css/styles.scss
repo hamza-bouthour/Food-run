@@ -104,6 +104,9 @@ h1 {
 .products-button {
     background-color: $color-secondary;
 }
+.remove-button {
+    background-color: red;
+}
 .custom-navbar-toggler-icon {
     display: inline-block;
     width: 1.5em;
@@ -133,5 +136,16 @@ h1 {
     border: 1px solid white;
     
   }
-  
+//  .checked-card-title {
+//     color: $color-secondary;
+//   }
+  .checked-icon {
+    position: absolute;
+    right: 0;
+    color: $color-secondary;
+}
+.checked-div {
+    background-color: black;
+    color: white;
+}
   
