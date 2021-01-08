@@ -40,12 +40,6 @@ h1 {
   background-color: rgba(34, 129, 15, 0.5);
   color: white; }
 
-.add-overflow {
-  background-color: white; }
-
-.row-content {
-  padding: 10px; }
-
 .no-border-left {
   border-radius: 0;
   border-top-left-radius: none;
@@ -64,28 +58,11 @@ h1 {
 .no-margin {
   margin: 0; }
 
-.card-width {
-  width: 10rem;
-  height: 10rem; }
-
-.add-overflow {
-  overflow-y: auto;
-  flex-wrap: nowrap; }
-
-.nav-link {
-  color: white; }
-
 .add-margin-top {
   margin-top: 100px; }
 
 .add-margin-bot {
   margin-bottom: 100px; }
-
-.products-button {
-  background-color: #22810f; }
-
-.remove-button {
-  background-color: red; }
 
 .custom-navbar-toggler-icon {
   display: inline-block;
@@ -106,5 +83,36 @@ h1 {
   color: #22810f; }
 
 .checked-div {
-  background-color: black;
+  background-color: rgba(4, 151, 177, 0.7);
   color: white; }
+
+.remove-button {
+  display: block; }
+
+.remove-product-list {
+  display: block; }
+
+.display-list-number-items {
+  display: block; }
+
+.select-button {
+  background-color: transparent;
+  border: none; }
+
+.select-button:hover {
+  font-weight: bold;
+  background-color: transparent;
+  border: none; }
+
+.product-card {
+  display: block; }
+
+.card-dish-background {
+  background-color: rgba(219, 216, 216, 0.5); }
+
+.active-button {
+  background-color: #220101;
+  color: white; }
+
+.dish-name-card {
+  color: #220101; }

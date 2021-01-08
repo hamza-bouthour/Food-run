@@ -2,9 +2,15 @@
 $color-secondary:rgb(34, 129, 15);
 $color-secondary-transparent:rgba(34, 129, 15, 0.5);
 $color-text-primary: white;
+$color-checked: rgba(4, 151, 177, 0.7);
 $main-font: 'Hind Siliguri', sans-serif;
 
 $color-header-background-2: linear-gradient(199deg, rgba(2,0,36,1) 0%, rgba(40,44,156,1) 19%, rgba(0,212,255,1) 100%);
+$card-dish-background-color: rgba(219, 216, 216, 0.5);
+// buttons
+$active-button-color: white;
+$active-button-background-color: rgb(34, 1, 1);
+
 
 nav {
     position: absolute;
@@ -37,7 +43,8 @@ h1 {
     background-image: url(https://i.postimg.cc/7P74yMjm/jumbotron-image3.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-//    min-height: 300px;
+
+//Aimed btns
 }
 .signin-button {
     position: absolute;
@@ -59,12 +66,8 @@ h1 {
     background-color: rgba(34, 129, 15, 0.5);
     color: white;
 }
-.add-overflow {
-    background-color: white; }
 
-.row-content {
-    padding: 10px; }
-    
+ //Border adjustment   
 .no-border-left {
     border-radius: 0;
     border-top-left-radius: none; 
@@ -76,24 +79,16 @@ h1 {
     border-radius: 0;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
-    // border-top-right-radius: none;
+   
 }   
 .border-radius-item {
     border-radius: 10px;
 }
+
+//margin adjustment
 .no-margin {
     margin: 0; }
-
-.card-width {
-    width: 10rem;
-    height: 10rem; }
-
-.add-overflow {
-    overflow-y: auto;
-    flex-wrap: nowrap; }
-.nav-link {
-    color: white;
-}    
+    
 .add-margin-top {
     margin-top: 100px;
 }
@@ -101,12 +96,7 @@ h1 {
     margin-bottom: 100px;
 }
 
-.products-button {
-    background-color: $color-secondary;
-}
-.remove-button {
-    background-color: red;
-}
+// navbar Toggler
 .custom-navbar-toggler-icon {
     display: inline-block;
     width: 1.5em;
@@ -119,33 +109,50 @@ h1 {
   }
  
 
- 
-//   .custom-navbar-toggler {
-//     margin-left: -15px;
-//     color: white;
-//     border-color: white;
-//     padding: 0.25rem 0.75rem;
-//     font-size: 1.25rem;
-//     line-height: 1;
-//     background-color: transparent;
-//     border: 1px solid white;
-//     border-radius: 0.25rem;
-//   }
-  .custom-navbar-toggler {
-  
-    border: 1px solid white;
-    
-  }
-//  .checked-card-title {
-//     color: $color-secondary;
-//   }
-  .checked-icon {
+.custom-navbar-toggler {
+border: 1px solid white;
+
+}
+
+.checked-icon {
     position: absolute;
     right: 0;
     color: $color-secondary;
 }
 .checked-div {
-    background-color: black;
+    background-color: $color-checked;
     color: white;
 }
+.remove-button {
+    display: block;
+}
+.remove-product-list {
+    display: block;
+}
+.display-list-number-items {
+   display: block;
+   
+}
+.select-button {
+  background-color: transparent;
+  border: none;
+}
   
+.select-button:hover {
+    font-weight: bold;
+  background-color: transparent;
+  border: none;
+}
+.product-card {
+    display: block;
+}
+.card-dish-background {
+    background-color: $card-dish-background-color;
+}
+.active-button {
+    background-color: $active-button-background-color;
+    color: $active-button-color;
+}
+.dish-name-card {
+    color: $active-button-background-color;
+}  
