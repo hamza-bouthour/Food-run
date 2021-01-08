@@ -3,7 +3,21 @@ nav {
   bottom: 0; }
 
 nav div ul {
-  background-color: rgba(31, 30, 30, 0.5); }
+  background-color: rgba(34, 1, 1, 0.4); }
+
+nav div ul li:hover {
+  color: white; }
+
+.navlinks {
+  color: #e9e6e6;
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+  display: block;
+  padding: 0.5rem 1rem; }
+
+.navlinks:hover {
+  color: white;
+  text-decoration: none; }
 
 h1 {
   color: white;
@@ -104,15 +118,22 @@ h1 {
   background-color: transparent;
   border: none; }
 
-.product-card {
-  display: block; }
-
 .card-dish-background {
   background-color: rgba(219, 216, 216, 0.5); }
+
+.card-body-background {
+  border: solid 2px #07bac0; }
 
 .active-button {
   background-color: #220101;
   color: white; }
 
+.active-button-product {
+  background-color: #c26903;
+  color: white; }
+
 .dish-name-card {
   color: #220101; }
+
+.card-text-margin {
+  margin-bottom: 0; }

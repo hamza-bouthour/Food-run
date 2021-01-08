@@ -7,9 +7,12 @@ $main-font: 'Hind Siliguri', sans-serif;
 
 $color-header-background-2: linear-gradient(199deg, rgba(2,0,36,1) 0%, rgba(40,44,156,1) 19%, rgba(0,212,255,1) 100%);
 $card-dish-background-color: rgba(219, 216, 216, 0.5);
+$card-body-border: rgb(7, 186, 192);
 // buttons
 $active-button-color: white;
 $active-button-background-color: rgb(34, 1, 1);
+$active-button-product-color: rgb(194, 105, 3);
+$active-button-background-color-gradiant: rgba(34, 1, 1, 0.4);
 
 
 nav {
@@ -20,7 +23,19 @@ nav {
 nav {
     div {
         ul {
-            background-color: rgba(31, 30, 30, 0.5);
+            background-color: $active-button-background-color-gradiant;
+            
+            
+           
+        }
+    }
+}
+nav {
+    div {
+        ul {
+            li:hover{
+                color: white;
+            }
             
             
            
@@ -28,6 +43,19 @@ nav {
     }
 }
 
+.navlinks {
+    color: rgb(233, 230, 230);
+  
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+    display: block;
+    padding: 0.5rem 1rem;
+}
+.navlinks:hover {
+    color: white;
+    text-decoration: none;
+
+}
 h1 {
     color: $color-text-primary;
     font-size: 65px;
@@ -143,16 +171,30 @@ border: 1px solid white;
   background-color: transparent;
   border: none;
 }
-.product-card {
-    display: block;
-}
+// .product-card {
+//     display: block;
+// }
 .card-dish-background {
     background-color: $card-dish-background-color;
+    
 }
+.card-body-background {
+    border: solid 2px $card-body-border;
+}
+// .card-img-border {
+//     border-bottom: dashed 1px red;
+// }
 .active-button {
     background-color: $active-button-background-color;
     color: $active-button-color;
 }
+.active-button-product {
+    background-color: $active-button-product-color;
+    color: $active-button-color;
+}
 .dish-name-card {
     color: $active-button-background-color;
+}
+.card-text-margin {
+    margin-bottom: 0;
 }  

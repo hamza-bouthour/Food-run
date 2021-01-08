@@ -35,18 +35,18 @@
                     <input class="col-8 form-control no-border-right" type="text" id="searchInput" style="height: 50px;" placeholder="Look up products for" style="padding: 2px;">           
                     <button  class="col-2 col-md-1 form-control no-border-left" type="submit" style="height: 50px;"><i class="fa fa-search"></i></button>                  
                 </form>
-                <nav class="navbar navbar-expand-sm navbar-dark navbar-dark sticky-top add-margin-top">
+                <nav class="navbar navbar-expand-sm navbar-dark sticky-top add-margin-top">
                         
                     <button class="navbar-toggler" style="border-color: white; margin-left: -15px;" type="button" data-toggle="collapse" data-target="#nucampNavbar">
                         <span class="custom-navbar-toggler-icon"></span>
                     </button>           
                     <div class="collapse navbar-collapse" id="nucampNavbar">
                         <ul class="navbar-nav border-radius-item p-2">
-                            <li class="nav-item active mr-md-5"><a class="nav-link text-white" href="index.html">Home</a></li>
-                            <li class="nav-item mr-md-5"><a class="nav-link text-white" id="listDisplayLink" href="#listContainer">Cart</a></li>
-                            <li class="nav-item mr-md-5"><a class="nav-link text-white" href="#">Repository</a></li>
-                            <li class="nav-item mr-md-5"><a class="nav-link text-white" href="">Portfolio</a></li>
-                            <li class="nav-item"><a class="nav-link text-white" href="">Contact</a></li>
+                            <li class="nav-item active mr-md-5"><a class="nav-link active" href="index.html">Home</a></li>
+                            <li class="nav-item mr-md-5"><a class="navlinks" id="listDisplayLink" href="#listContainer">Cart</a></li>
+                            <li class="nav-item mr-md-5"><a class="navlinks" href="https://github.com/hamza-bouthour/Food-run" target="_blank">Repository</a></li>
+                            <li class="nav-item mr-md-5"><a class="navlinks" href="">Portfolio</a></li>
+                            <li class="nav-item"><a class="navlinks" href="">Contact</a></li>
                         </ul>
                     </div>
                 </nav>     
@@ -140,11 +140,18 @@
         <div class="row" id="popular-dishes-container">
         </div>
     </div>
-        <div id="modalsContainer"></div>
-        <div class="container">
-
-            <div class="row d-none" id="listContainer"></div>
+    <div id="modalsContainer"></div>
+    <div class="container mt-5">
+        
+        <div class="row d-none" id="listContainer">
+            <div class="col-12 ml-1">
+                <div class="col">
+                    <h3 class="h3">Your List</h3>
+                    <hr>
+                </div>
+            </div>  
         </div>
+    </div>
       
         
        
