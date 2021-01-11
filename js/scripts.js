@@ -278,6 +278,7 @@ $(document).ready(function() {
         $("div#dish-container").addClass("d-none");
         $("div#listContainer").removeClass("d-none");
     });
+    
 
     $("button#selectall-button").click(function() {
        $("span#selected-display").addClass("d-none");
